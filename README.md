@@ -955,11 +955,7 @@ For the Python Spark library, you have the following additional options:
 pip install sagemaker_pyspark
 ```
 
-https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-spark/pyspark_mnist/pyspark_mnist_kmeans.html
 
-https://aws-dojo.com/ws8/labs/pyspark-code/
-
-https://pythonrepo.com/repo/JohnSnowLabs-spark-nlp-python-natural-language-processing
 
 
 
@@ -1207,6 +1203,12 @@ You can apply filters to both regular and calculated fields, which include text,
 
 **References**
 
+https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-spark/pyspark_mnist/pyspark_mnist_kmeans.html
+
+https://aws-dojo.com/ws8/labs/pyspark-code/
+
+https://pythonrepo.com/repo/JohnSnowLabs-spark-nlp-python-natural-language-processing
+
 https://www.mysqltutorial.org/mysql-sample-database.aspx
 
 https://www.dofactory.com/sql/sample-database
@@ -1219,17 +1221,3 @@ https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-jdbc
 
 https://databricks.com/blog/2019/07/15/migrating-transactional-data-to-a-delta-lake-using-aws-dms.html
 
-
-
-
-
-The MySQL sample database schema consists of the following tables:
-
-- **Customers**: stores customer’s data.
-- **Products**: stores a list of scale model cars.
-- **ProductLines**: stores a list of product line categories.
-- **Orders**: stores sales orders placed by customers.
-- **OrderDetails**: stores sales order line items for each sales order.
-- **Payments**: stores payments made by customers based on their accounts.
-- **Employees**: stores all employee information as well as the organization structure such as who reports to whom.
-- **Offices**: stores sales office data.
