@@ -661,37 +661,11 @@ databaseName: default
 
 # MySQL to Delta Lake
 
-This page provides you with instructions on how to extract data from MySQL and load it into Delta Lake. (If this manual process sounds onerous, check out [Stitch](https://stitchdata.com/integrations/mysql/databricks-delta/?utm_source=todeltalake.com&utm_medium=microsite-referral&utm_campaign=microsite-referral+mysql-todeltalake.com), which can do all the heavy lifting for you in just a few clicks.)
-
-## What is MySQL?
-
 [MySQL](https://www.mysql.com/) is the world's most popular open source relational database management system (RDBMS). It's the data store for countless websites and applications; chances are you interact with MySQL-powered technology every day. MySQL is largely used as a transactional or operational database, and not as much for analytics.
 
 ## What is Delta Lake?
 
 [Delta Lake](https://databricks.com/product/delta-lake-on-databricks) is an open source storage layer that sits on top of existing data lake file storage, such AWS S3, Azure Data Lake Storage, or HDFS. It uses versioned Apache Parquet files to store data, and a transaction log to keep track of commits, to provide capabilities like ACID transactions, data versioning, and audit history.
-
-## Getting data out of MySQL
-
-MySQL provides several methods for extracting data; the one you use may depend upon your needs and skill set.
-
-The most common way to get data out of any database is simply to write queries. [SELECT](http://dev.mysql.com/doc/refman/5.7/en/select.html) queries allow you to pull the data you want. You can specify filters and ordering and limit results.
-
-If you're looking to export data in bulk, there's an easier alternative. Most MySQL installs include a handy command-line tool called [mysqldump](https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html) that allows you to export entire tables and databases in a format you specify, including delimited text, CSV, or an SQL query that would restore the database if run.
-
-## Loading data into Delta Lake on Databricks
-
-To create a Delta table, you can use existing Apache Spark SQL code and change the format from `parquet`, `csv`, or `json` to `delta`. Once you have a Delta table, you can write data into it using Apache Spark's Structured Streaming API. The Delta Lake transaction log guarantees exactly-once processing, even when there are other streams or batch queries running concurrently against the table. By default, streams run in append mode, which adds new records to the table. Databricks provides [quickstart documentation](https://docs.databricks.com/delta/quick-start.html#) that explains the whole process.
-
-## Keeping MySQL data up to date
-
-The script you have now should satisfy all your data needs for MySQL — right? Not yet. How do you load new or updated data? It's not a good idea to replicate all of your data each time you have updated records. That process would be painfully slow; if latency is important to you, it's not a viable option.
-
-Instead, you can identify some key fields that your script can use to bookmark its progression through the data, and pick up where it left off as it looks for updated data. Auto-incrementing fields such as updated_at or created_at work best for this. When you've built in this functionality, you can set up your script as a cron job or continuous loop to get new data as it appears in MySQL.
-
-## Other data warehouse options
-
-Delta Lake on Databricks is great, but sometimes you need to optimize for different things when you're choosing a data warehouse. Some folks choose to go with Amazon Redshift, Google BigQuery, PostgreSQL, or Snowflake, which are RDBMSes that use similar SQL syntax, or Panoply, which works with Redshift instances. Others choose a data lake, like Amazon S3. If you're interested in seeing the relevant steps for loading data into one of these platforms, check out [To Redshift](http://toredshift.com/), [To BigQuery](http://tobigquery.com/), [To Postgres](http://topostgres.com/), [To Snowflake](http://tosnowflake.com/), [To Panoply](http://www.topanoply.com/), and [To S3](http://www.to-s3.com/).
 
 Well finally we have created our database in **Amazon RDS** , now is time to use  **AWS Glue**.
 
