@@ -831,29 +831,7 @@ To query data from sources other than Amazon S3 in Athena, we can use [Athena Fe
 
 we can create a **DataLake in S3.**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 After you create a table, you can use [SQL SELECT](https://docs.aws.amazon.com/athena/latest/ug/select.html) statements to query it, including getting [specific file locations for your source data](https://docs.aws.amazon.com/athena/latest/ug/select.html#select-path). Your query results are stored in Amazon S3 in [the query result location that you specify](https://docs.aws.amazon.com/athena/latest/ug/querying.html#query-results-specify-location).
-
-
-
-
-
-
 
 The AWS Glue Data Catalog is accessible throughout your Amazon Web Services account. Other AWS services can share the AWS Glue Data Catalog, so you can see databases and tables created throughout your organization using Athena and vice versa. In addition, AWS Glue lets you automatically discover data schema and extract, transform, and load (ETL) data.
 
@@ -1016,14 +994,6 @@ Type **shift** and **enter** at the same time to run the cell, and you should se
 
 Congratulations! You now have a Sparkmagic ker
 
-
-
-
-
-
-
-
-
 # Athena Query from Python
 
 
@@ -1183,19 +1153,6 @@ You can apply filters to both regular and calculated fields, which include text,
 2. Select **Different as percent(%)** under **comparison method** on the left.
 
 [![image](assets/images/posts/README/kpi-percent.png)](https://bringyourowndatalabs.workshop.aws/visualization_images/kpi-percent.png)
-
-### Review ML Insights
-
-1. Click the ‘Insights’ menu on the left. Notice all the suggested insights QuickSight has generated based on what has been built so far!
-2. Hover over any of the insights and click the ‘+’ to add it to the dashboard.
-
-[![image](assets/images/posts/README/add-insight.png)](https://bringyourowndatalabs.workshop.aws/visualization_images/add-insight.png)
-
-**NOTE:** You can customize the narrative by clicking on top right arrow of the visual and selecting **Customize narrative**.
-
-> Note: The interesting outlier in the above graph is that on Jan23rd, 2016, you see the dip in the number of taxis across all types. Doing a quick google search for that date, gets us this weather article from NBC New York[![image](assets/images/posts/README/qsimage22.PNG)](https://s3.amazonaws.com/us-east-1.data-analytics/labcontent/reinvent2017content-abd313/lab2/qsimage22.PNG)
-
-*Using Amazon QuickSight, you were able to see patterns across a time-series data by building visualizations, performing ad-hoc analysis, and quickly generating insights.*
 
 
 
