@@ -695,15 +695,7 @@ Delta Lake on Databricks is great, but sometimes you need to optimize for differ
 
 Well finally we have created our database in **Amazon RDS** , now is time to use  **AWS Glue**.
 
-https://www.google.com/search?q=Amazon+Athena+Federated+tutorial&rlz=1C1JJTC_itIT972IT972&oq=Amazon+Athena+Federated+tutorial&aqs=chrome..69i57j69i64l3.4500j1j15&sourceid=chrome&ie=UTF-8#kpvalbx=_ht3uYYL0Ka6Pxc8PzPy3gAY15
 
-https://aws.amazon.com/about-aws/whats-new/2021/11/amazon-athena-announces-cross-account-federated-query/
-
-https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-jdbc
-
-https://databricks.com/blog/2019/07/15/migrating-transactional-data-to-a-delta-lake-using-aws-dms.html
-
-https://databricks.com/blog/2019/07/15/migrating-transactional-data-to-a-delta-lake-using-aws-dms.html
 
 ### Connect Sagemaker to RDS db
 
@@ -1220,6 +1212,14 @@ https://www.mysqltutorial.org/mysql-sample-database.aspx
 https://www.dofactory.com/sql/sample-database
 
 https://aws.amazon.com/blogs/big-data/data-preparation-using-an-amazon-rds-for-mysql-database-with-aws-glue-databrew/
+
+https://aws.amazon.com/about-aws/whats-new/2021/11/amazon-athena-announces-cross-account-federated-query/
+
+https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-jdbc
+
+https://databricks.com/blog/2019/07/15/migrating-transactional-data-to-a-delta-lake-using-aws-dms.html
+
+
 
 
 
