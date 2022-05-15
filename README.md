@@ -8,11 +8,7 @@ Le us assume that you company has a **Relational database** and you have the tas
 
 A possible **solution** is depicted in the following diagram:
 
-
-
 <img src="assets/images/posts/README/athena.jpg" style="zoom:50%;" />
-
-
 
 This solution is a way to create a **beautiful dashboard** in **AWS** with **Quicksight** .
 
